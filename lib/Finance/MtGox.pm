@@ -263,7 +263,7 @@ sub _build_api_method_uri {
                 : die "Unknown version"
                 ;
     $prefix = $prefix ? "$prefix/" : '';
-    return URI->new("https://mtgox.com/$version/$prefix$name.php");
+    return URI->new("https://data.mtgox.com/$version/$prefix$name.php");
 }
 
 # builds an HTTP::Request object for making an API call
